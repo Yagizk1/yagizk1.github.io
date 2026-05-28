@@ -1,1 +1,129 @@
-Devamsızlık Takip Uygulaması Resmi Web Sitesi. Uygulamamız Google Play Store'da yayındadır!
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Yağız Karataş | Mobile App Developer</title>
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            color: #38bdf8;
+            letter-spacing: -1px;
+        }
+        p.bio {
+            font-size: 1.2rem;
+            color: #cbd5e1;
+            line-height: 1.6;
+            margin-bottom: 50px;
+        }
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+        .app-card {
+            background-color: #1e293b;
+            padding: 30px 20px;
+            border-radius: 16px;
+            border: 1px solid #334155;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+        .app-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            border-color: #38bdf8;
+        }
+        .app-card h3 {
+            margin-top: 0;
+            font-size: 1.4rem;
+            color: #f1f5f9;
+        }
+        .app-card p {
+            color: #94a3b8;
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 25px;
+        }
+        .app-card a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0ea5e9;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: background-color 0.2s;
+        }
+        .app-card a:hover {
+            background-color: #0284c7;
+        }
+        .footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid #334155;
+            font-size: 0.95rem;
+            color: #64748b;
+        }
+        .footer a {
+            color: #38bdf8;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Yağız Karataş</h1>
+        <p class="bio">
+            Kullanıcı deneyimi odaklı, hızlı ve güvenli mobil çözümler üretiyorum.<br>
+            Modern uygulamalarımla günlük hayatınızı kolaylaştırmayı hedefliyorum.
+        </p>
+        
+        <div class="apps-grid">
+            <!-- QR Scanner Uygulaması -->
+            <div class="app-card">
+                <h3>QR & Barcode Scanner</h3>
+                <p>Hızlı ve güvenli kod okuyucu. Wi-Fi ağlarına tek tıkla bağlanın, kendi kodlarınızı oluşturun ve anında paylaşın.</p>
+                <a href="https://play.google.com/store/apps/details?id=com.yagizk1.qrbarcodescanner" target="_blank">Play Store'da Gör</a>
+            </div>
+            
+            <!-- Devamsızlık Takip Uygulaması -->
+            <div class="app-card">
+                <h3>Devamsızlık Takip</h3>
+                <p>Öğrenciler için pratik devamsızlık takip uygulaması. Derslerinizi, sınavlarınızı ve tatillerinizi kolayca yönetin.</p>
+                <!-- DİKKAT: Aşağıdaki href="#" kısmına Devamsızlık uygulamanızın Google Play linkini koyun -->
+                <a href="#" target="_blank">Play Store'da Gör</a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2026 Yağız Karataş. Tüm hakları saklıdır.</p>
+            <p>
+                <a href="/privacy-policy/qr-privacy">QR Scanner Gizlilik Politikası</a> | 
+                <a href="/privacy-policy/devamsizlik">Devamsızlık Takip Gizlilik Politikası</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
